@@ -1,0 +1,89 @@
+1. 什么是ANR，如何避免
+2. 调试内存泄露的工具都使用过什么？如何查看的？ ddms heap
+3. listview  content view adapter 几种adapter的区别
+4. bitmap
+5. runtime exception
+6. activity、 intent 、intent filter、service、Broadcast、BroadcaseReceiver
+7. Intent、Activity、broadcast、Service
+8. back与home
+8. aidl idl rpc
+9. dip dp dpi px
+10. sax dom pull 解析xml的原理 各自优缺点
+11. java线程的sleep(),wait(),notify(),yield()方法的区别
+12. 注册BroadcastReceiver的方法
+13. 广播的生命周期（receiver里做耗时操作是否会导致anr）
+14. 广播的种类
+15. 屏幕方向切换时，例如从竖屏切换到横屏时  activity  onSaveInstanceState  onRestoreInstanceState
+16. 用户按下home键、长按home键、电源键、方向切换   在onCreate方法中Bundle savedInstanceState 这个参数有什么作用
+17. activity四种启动模式：singleTop，singleTask，standard，singleInstance
+18. activity生命周期
+19. java调用c语言库
+20. 音频转换
+21. 拍照
+22. 混淆
+23. ant
+24. 怎样控制bitmap的内存
+25. soft reference
+26. 数据库插入和读取速度
+27. 数据库连接池管理 多线程并发如何处理 
+28. service
+29. 网络连接
+30. 断点续传
+31. 动画的种类
+32. context 全局 context
+33. ddms
+34. view 如何 刷新 可以调用invalidate()和postInvalidate()这两个方法刷新
+35. android 数据存储方式 sharedpreference file sqlite contentprovider net
+
+ 8 ) Describe Activities.
+Activities are what you refer to as the window to a user interface. Just as you create windows in order to display output or to ask for an input in the form of dialog boxes, activities play the same role, though it may not always be in the form of a user interface.
+9) What are Intents?
+Intents displays notification messages to the user from within the Android enabled device. It can be used to alert the user of a particular state that occurred. Users can be made to respond to intents.
+
+36. assets目录作用
+37. android的缺点
+38. adb是什么
+Adb is short for Android Debug Bridge. It allows developers the power to execute remote shell commands. Its basic function is to allow and control communication towards and from the emulator port.
+ 23) What is the function of an intent filter?
+Because every component needs to indicate which intents they can respond to, intent filters are used to filter out intents that these components are willing to receive. One or more intent filters are possible, depending on the services and activities that is going to make use of it.
+ 25) When is the onStop() method invoked?
+A call to onStop method happens when an activity is no longer visible to the user, either because another activity has taken over or if in front of that activity.
+
+39. hdpi mdpi nodpi 区别
+40. What is the difference between a regular bitmap and a nine-patch image? 点9图
+41. 反编译工具
+42. 
+
+    The Activity life cycle is must. Different phases of Activity Life cycle. For example: when and how the activity comes to foreground?
+    Knowledge on AndroidManifest file, For example: Why do we need this file, What is the role of this file in Android app development.
+    Different Kinds of Intents
+    Different Kinds of Context
+    Different Storage Methods in android
+    Kinds of Log debugger and Debugger Configuration
+    How to debug the application on real device.
+    How do you ensure that the app design will be consistent across the different screen resolutions
+    Thread concepts also plus points as we deal with the treads more.
+    Can you able to build custom views and how?
+    How to create flexible layouts, For example to place English, Chinese fonts.
+    What is localization and how to achieve?
+    What are 9-patch images
+    How to avoid ANR status
+    How to do Memory management
+    Inter Process Communication (IPC)
+    What is onCreate(Bundle savedInstanceState), Have you used savedInstanceState when and why?
+    Fragments in an Activity
+    When to use a service
+    How to use a broadcast receiver and register it both in the manifest and in code
+    Intent filters
+    The types of flags to run an application
+    How to do data intensive calculations using threads
+    Passing large objects (that can’t be passed via intents and shouldn’t be serialized) via a service
+    Binding to a service and the service lifecycle
+    How to persist data (both savedInstanceState and more permanent ways)
+
+
+How will you pass data to sub-activities?  bundle
+How will you call a subactivity? Write code.  new intent start activity
+
+ Q14. Can an Android application access files or resources of another Android application?
+A. The system sets permission on all the files/resources of an application so that they are only accessible by their own application. Other applications cannot access resources belonging to other applications unless applications sign the same certificate. 
